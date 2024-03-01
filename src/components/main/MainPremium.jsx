@@ -33,19 +33,19 @@ const MainPremium = ()=>{
                 <div className="paragraph">
                     <div>
                     <p className="para1">Ad-free music listening</p>
-                    <p>Enjoy uninterrupted music</p>
+                    <p className="para2">Enjoy uninterrupted music</p>
                     </div>
                     <div>
                     <p className="para1">Offline playback</p>
-                    <p>Save your data by<br></br> listening online</p>
+                    <p className="para2">Save your data by<br></br> listening online</p>
                     </div>
                     <div>
                     <p className="para1">play everywhere</p>
-                    <p>Listen on your speakers, TV, <br></br>and other favorite devices</p>
+                    <p className="para2">Listen on your speakers, TV, <br></br>and other favorite devices</p>
                     </div>
                     <div>
                     <p className="para1">Pay your way</p>
-                    <p>Pre pay with Paytm, UPI, <br></br>and more</p>
+                    <p className="para2">Pre pay with Paytm, UPI, <br></br>and more</p>
                     </div>
                 </div>
             </div>
