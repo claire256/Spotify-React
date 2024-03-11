@@ -1,21 +1,42 @@
 import './LandingPageHeader.css';
-import Logo from './Logo'
+import Logo from './Logo';
+import menu from "../../assets/images/menu.svg"
+import { useState } from 'react';
+
 const LandingPageHeader = ()=>{
+
+  const[toggle, setToggle] = useState(false);
+
+  const handleToggle = ()=>{
+    setToggle(!toggle)
+  }
+console.log(toggle)
      return(
          <div className="header">
            <div className="logo">
              <Logo/>
            </div>
-           <div className="menu">
-             <ul>
+           <div>
+           <img src={menu} className="menu-img" onClick={handleToggle} alt=""/>
+            { toggle?
+            <ul className="menu">
              <li><a href="#/premium">Premium</a></li>
              <li><a href="#">Support</a></li>
              <li><a href="#">Download</a></li>
-              <li>|</li>
               <li className="active"><a href="#">Sign up</a></li>
               <li className="active"><a href="#">Log in</a></li>
-             </ul>
+             </ul> : <></>}
+            <div className="menu">
+            <ul>
+            <li><a href="#/premium">Premium</a></li>
+             <li><a href="#">Support</a></li>
+             <li><a href="#">Download</a></li>
+              <li className="hide">|</li>
+              <li className="active"><a href="#">Sign up</a></li>
+              <li className="active"><a href="#">Log in</a></li>
+              </ul>
            </div>
+         </div>
          </div>
      )
 }

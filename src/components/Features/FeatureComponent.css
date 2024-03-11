@@ -1,0 +1,17 @@
+.power{
+    display: flex;
+    gap: 3%;
+    margin-left: 22%;
+    padding-top: 40px
+}
+
+h1{
+    padding-top: 40px;
+    font-size: 40px;
+}
+p{
+    font-size: 14px;
+}
+.power .power-div{
+    width: 200px;
+}

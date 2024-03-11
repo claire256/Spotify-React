@@ -1,5 +1,5 @@
-button{
-    padding: 0 20px;
+.comp-button{
+    padding: 0 23px;
     height: 45px;
     border-radius: 20px;
     font-size: 12px;
@@ -7,3 +7,12 @@ button{
     font-weight: 200;
 
 }
+
+@media (max-width: 500px) {
+    .button{
+        padding: 0 5px;
+        font-size: 10px;
+        
+    }
+}
+

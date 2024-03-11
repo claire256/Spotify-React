@@ -1,11 +1,9 @@
 import MainButton from '../buttons/MainButton';
 import  './MainPremium.css';
 
-const images = require.context('../../assets/images/premium', true, /\.svg$/);
-const imageList = images.keys().map(image => images(image));
-
 const MainPremium = ()=>{
 
+    
     return(
         <div>
             <div className="get">
@@ -22,32 +20,6 @@ const MainPremium = ()=>{
                 />
                 </div>
                 <p className="p2"><a href="#">Terms and conditions apply.</a>1 month free not available for users who have already tried Premium</p>
-            </div>
-            <div className="power">
-                <h1>The power of Premium </h1>
-                <div className="images">
-                {imageList.map((image, index) => (
-                <img key={index} src={image}/>
-                  ))}
-                </div>
-                <div className="paragraph">
-                    <div>
-                    <p className="para1">Ad-free music listening</p>
-                    <p className="para2">Enjoy uninterrupted music</p>
-                    </div>
-                    <div>
-                    <p className="para1">Offline playback</p>
-                    <p className="para2">Save your data by<br></br> listening online</p>
-                    </div>
-                    <div>
-                    <p className="para1">play everywhere</p>
-                    <p className="para2">Listen on your speakers, TV, <br></br>and other favorite devices</p>
-                    </div>
-                    <div>
-                    <p className="para1">Pay your way</p>
-                    <p className="para2">Pre pay with Paytm, UPI, <br></br>and more</p>
-                    </div>
-                </div>
             </div>
         </div>
     )
