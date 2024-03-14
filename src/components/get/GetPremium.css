@@ -1,0 +1,42 @@
+.get{
+    background: #1D75DE;
+    margin-top: -2%;
+    min-height: 400px; 
+}
+.get h1{
+    color: white;
+    padding-top: 80px;
+    font-size: 3em;
+}
+.get .p1{
+    color: white;
+    font-size: 1.2em;
+    padding-top: 10px;
+}.get .p2{
+    color: white;
+    font-size: 0.7em;
+    padding-top: 20px;
+}
+.get a{
+    color: white;
+}
+.buttons{
+    padding-top: 10px;
+}
+
+@media (max-width: 500px) {
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .get{
+        margin-top:-7%;
+        padding: 0 20px;
+    }
+    .get .p2{
+        padding-bottom: 20px;
+    }
+}

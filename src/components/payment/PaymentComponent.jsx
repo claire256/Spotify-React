@@ -1,4 +1,4 @@
-import MainButton from "../buttons/MainButton"
+import CustomButton from "../buttons/CustomButton"
 import "./PaymentComponent.css";
 import Amex from "../../assets/images/payment/Amex.svg";
 import circle from "../../assets/images/payment/circle.svg";
@@ -7,11 +7,8 @@ import paytm from "../../assets/images/payment/paytm.svg";
 import UPI from "../../assets/images/payment/UPI.svg";
 import visa from "../../assets/images/payment/visa.svg";
 import tick from "../../assets/images/tick.svg"
-import { useState } from "react";
-
 
 const PaymentComponent = ()=>{
-const [show, setShow]= useState(true)
    
 const paymentplans = [
     {
@@ -83,7 +80,7 @@ const paymentplans = [
                     )}
                        </div>
                     <div className="card-bottom">
-                    <MainButton name="VIEW PLANS" 
+                    <CustomButton name="VIEW PLANS" 
                        style={{background: "black", width: "90%"}}/>
                     <hr className="hr"/>
                        <p><a href="#">{plan.terms}</a>{plan.termpara}</p>
@@ -91,9 +88,9 @@ const paymentplans = [
                    </div>
                 )}
             </div>
-            <div className="discout">
+            <div className="discount">
                 <h3>Special discount for eligible students in university</h3>
-                <MainButton name="LEARN MORE" style={{color: "black", background: "transparent", border: "solid 2px black"}}/>
+                <CustomButton name="LEARN MORE" style={{color: "black", background: "transparent", border: "solid 2px black"}}/>
             </div>
         </div>
     )

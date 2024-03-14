@@ -2,16 +2,24 @@
     display: flex;
     gap: 3%;
     margin-left: 22%;
-    padding-top: 40px
+    padding-top: 40px;
+    flex-wrap: wrap;
 }
 
 h1{
     padding-top: 40px;
     font-size: 40px;
 }
+h4{
+    font-size: 1.1em;
+}
 p{
-    font-size: 14px;
+    font-size: 1em;
 }
 .power .power-div{
     width: 200px;
+}
+
+@media (max-width: 500px) {
+    
 }

@@ -7,7 +7,7 @@ h1{
     padding-top: 80px;
 }
 .listen-para{
-    font-size: 20px;
+    font-size: 1.1em;
     margin-top: -25px;
 }
 .icons{
@@ -20,11 +20,12 @@ h1{
     display: flex;
     gap:1.3%;
     margin-left: 16%;
+    flex-wrap: wrap;
 }
 .card{
     background: white; 
     width: 260px;
-     height: 500px;  
+    height: 500px;  
     border-radius: 10px;
     position: relative;
     box-shadow: -1px 1px 5px 1px #b4b1b1;
@@ -34,9 +35,6 @@ h1{
 .card h4{
     font-weight: 700;
     
-}
-.card p{
-    /* width: 70% */
 }
 .button{
     background: transparent;
@@ -48,7 +46,6 @@ h1{
     width: 200px;
 }
 .main-para p{
-    /* margin-left: 10%; */
     font-size: 16px;
 }
 hr{
@@ -60,9 +57,8 @@ hr{
     width: 120px;
     text-align: center;
     border-radius: 3px;
-    /* margin-top: 15px; */
 }
-.discout{
+.discount{
     width: 35%;
     align-items: center;
     display: flex;
@@ -103,4 +99,15 @@ a{
     color: grey; 
 }
 
-
+@media (max-width: 500px) {
+    .card-div{
+        gap:15px;
+    }
+    .discount{
+        width: 60%;
+        margin-left: 16%; 
+    }
+    .discount h3{
+      font-size: 14px; 
+    }
+}
