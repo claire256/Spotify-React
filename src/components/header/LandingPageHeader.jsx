@@ -14,7 +14,7 @@ console.log(toggle)
      return(
          <div className="header">
            <div className="logo">
-             <Logo/>
+             <Logo useWhite ={true}/>
            </div>
            <div>
            <img src={menu} className="menu-img" onClick={handleToggle} alt=""/>
@@ -24,7 +24,7 @@ console.log(toggle)
              <li><a href="#">Support</a></li>
              <li><a href="#">Download</a></li>
               <li className="active"><a href="#">Sign up</a></li>
-              <li className="active"><a href="#">Log in</a></li>
+              <li className="active"><a href="login">Log in</a></li>
              </ul> : <></>}
             <div className="menu">
             <ul>
@@ -33,7 +33,7 @@ console.log(toggle)
              <li><a href="#">Download</a></li>
               <li className="hide">|</li>
               <li className="active"><a href="#">Sign up</a></li>
-              <li className="active"><a href="#">Log in</a></li>
+              <li className="active"><a href="login">Log in</a></li>
               </ul>
            </div>
          </div>

@@ -1,18 +1,11 @@
 .comp-button{
     padding: 0 23px;
-    height: 45px;
-    border-radius: 20px;
-    font-size: 12px;
+    height: 48px;
+    border-radius: 23px;
+    font-size: 14px;
     color: white;
-    font-weight: 200;
+    font-weight: 400;
 
 }
 
-@media (max-width: 500px) {
-    .button{
-        padding: 0 5px;
-        font-size: 10px;
-        
-    }
-}
 

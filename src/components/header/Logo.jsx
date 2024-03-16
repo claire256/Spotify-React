@@ -1,11 +1,21 @@
 import spotifywhite from '../../assets/images/spotifywhite.svg'
-const Logo = ()=>{
-  return(
-      <div>
-          <a href="#">
-              <img src={spotifywhite}/>
-          </a>
-      </div>
-  )
+import spotifyblack from '../../assets/images/spotifyblack.svg'
+
+const Logo = (props)=>{
+  if(props.useWhite){
+    return(
+        <a href="#/dashboard">
+        <img src={spotifywhite}/>
+        </a>
+    )
+  }
+  else{
+    return(
+    <a href="#/dashboard">
+    <img src={spotifyblack}/>
+    </a>
+    )
+  }  
+  
 }
 export default Logo;

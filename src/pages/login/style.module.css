@@ -1,0 +1,59 @@
+form input{
+    width: 28%;
+    height: 26px; 
+    border-radius: 4px;
+    padding: 13px 13px 13px 14px;
+    color: #878787;
+    font-size: 17px;
+}
+form .display{
+    display: flex;
+    margin-left: 35%; 
+    justify-content: space-between;
+    width: 30%;
+    padding-top: 20px;
+}
+form .display .remember{
+    width: 35%;
+}
+.display .remember input[type="checkbox"]{
+    accent-color: #1ED760;
+}
+form a{
+    margin-right: 20%;
+    text-decoration: underline;
+    color: black;
+    font-weight: 400;
+}
+form .email{
+    margin-right: 18%;
+    font-weight: 700;
+}
+form .password{
+    margin-right: 25%;
+    font-weight: 700;
+}
+form .dont{
+    font-size: 20px;
+    font-weight: 700;
+}
+.apple{
+    position: absolute;
+    margin-left: 7%;
+}
+.facebook{
+    position: absolute;
+    margin-left: 6%;
+    padding-top: 7px;
+}
+.google{
+    width: 23px;
+    position: absolute;
+    margin-left: 7%;
+    padding-top: 8px;
+}
+.eye{
+    position: absolute;
+    margin-left: 27%;
+    padding-top: 14px;
+}
