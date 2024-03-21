@@ -80,8 +80,12 @@ const paymentplans = [
                     )}
                        </div>
                     <div className="card-bottom">
-                    <CustomButton name="VIEW PLANS" 
-                       style={{background: "black", width: "90%"}}/>
+                    <CustomButton 
+                    type ="primary"
+                    name="VIEW PLANS" 
+                    onClick={()=>{}}
+                    className ="view-btn"
+                    />
                     <hr className="hr"/>
                        <p><a href="#">{plan.terms}</a>{plan.termpara}</p>
                     </div>
@@ -90,7 +94,10 @@ const paymentplans = [
             </div>
             <div className="discount">
                 <h3>Special discount for eligible students in university</h3>
-                <CustomButton name="LEARN MORE" style={{color: "black", background: "transparent", border: "solid 2px black"}}/>
+                <CustomButton name="LEARN MORE" 
+                type ="outline"
+                className = "discount-btn"
+                />
             </div>
         </div>
     )

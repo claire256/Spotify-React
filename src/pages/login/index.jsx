@@ -9,7 +9,7 @@ import eye from '../../assets/images/eye.svg'
 const LoginPage = ()=>{
 
     return(
-        <div>
+        <div className={style.container}>
             <div>
                 <br></br>
                 <Logo/>
@@ -18,13 +18,29 @@ const LoginPage = ()=>{
             <br></br>
             <div>
                 <img src={facebook} className={style.facebook}/>
-                <CustomButton name="CONTINUE WITH FACEBOOK" style={{background: "#1877F2", width: "30%", border:"none"}} /><br></br><br></br>
-                <img className={style.apple} src={apple}/>
-                <CustomButton name="CONTINUE WITH APPLE"  style={{background: "black", width: "30%"}} /><br></br><br></br>
-                <img src={google} className={style.google} />
-                <CustomButton name="CONTINUE WITH GOOGLE"  style={{background: "#FFFFFF", width: "30%",  border:" solid 1px #878787", color:"#878787"}} />
+                <CustomButton name="CONTINUE WITH FACEBOOK" 
+                onClick ={()=>{}}
+                type ="primary"
+                className ={style.facebtn}
+                />
                 <br></br><br></br>
-                <hr style={{width: '500px'}}/>
+                <img className={style.apple} src={apple}/>
+                <CustomButton name="CONTINUE WITH APPLE"  
+                onClick ={()=>{}}
+                type ="primary"
+                className ={style.appbtn}
+                />
+                <br></br><br></br>
+                <img src={google} className={style.google} />
+                <CustomButton name="CONTINUE WITH GOOGLE" 
+                onClick ={()=>{}} 
+                type="outline"
+                className ={style.goobtn}
+                />
+                <br></br><br></br>
+                <div className={style.divider}>
+                  <hr className={style.hr}/><span>OR</span><hr className={style.hr}/>
+                </div>
                 <br></br>
                 <form>
                     <label className={style.email}>Email address or username</label><br></br><br></br>
@@ -38,12 +54,22 @@ const LoginPage = ()=>{
                     <input type="checkbox" checked/>
                     <label>Remember me</label>
                     </div>
-                    <CustomButton name="LOG IN" style={{background: "#1ED760", border:"none"}}/>
+                    <CustomButton 
+                    name="LOG IN"
+                     onClick ={()=>{}}
+                     className={style.loginbtn}
+                     type="primary "
+                     />
                     </div>
                     <br></br>
                     <hr style={{width: '500px'}}/>
                     <p className={style.dont}>Don't have an account?</p>
-                    <CustomButton name="SIGN UP WITH SPOTIFY" style={{background: "white", border:"none", border:" solid 1px #878787", color:"#878787", width: "30%"}} />
+                    <CustomButton 
+                    name="SIGN UP WITH SPOTIFY"
+                    onClick ={()=>{}}
+                    className ={style.signbtn}  
+                    type="outline"
+                    />
                 <br></br>
                 </form>
             </div>

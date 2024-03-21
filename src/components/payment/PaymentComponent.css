@@ -59,13 +59,13 @@ hr{
     border-radius: 3px;
 }
 .discount{
-    width: 35%;
+    width: 45%;
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 55px;
+    height: 70px;
     background: white;
-    gap: 1%;
+    gap: 2%;
     border-radius: 10px;
     margin-left: 33%;
     margin-bottom: 3%;
@@ -94,6 +94,14 @@ h2{
 }
 .card-bottom p{
     color: grey;
+}
+.card-bottom .view-btn{
+     width: 90%;
+}
+.discount .discount-btn{
+    color: black; 
+    border: solid 2px black;
+    width: 100px;
 }
 a{
     color: grey; 

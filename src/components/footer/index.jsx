@@ -13,7 +13,7 @@ export const FooterComponent = ()=>{
             <div className={style.menu}>
                 <div className={style.flex} >
                 <div>
-                    <Logo/>
+                    <Logo useWhite={true}/>
                 </div >
                 <div className={style.flex}>
                     <Menu title="COMPANY" options={aboutMenu}/>
